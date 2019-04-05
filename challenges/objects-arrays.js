@@ -78,7 +78,7 @@ const universities = [];
 graduates.forEach(graduates => 
   universities.push(`${graduates.university}`));
 
-console.log(universities);
+console.log(universities.sort());
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -87,6 +87,10 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
+// console.log(contactInfo);
+graduates.forEach(graduates => 
+  contactInfo.push(`${graduates.first_name} ${graduates.email}`));
+
 console.log(contactInfo);
 
 

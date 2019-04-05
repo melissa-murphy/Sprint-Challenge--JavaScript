@@ -17,26 +17,26 @@ function consume(param1, param2, callback) {
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-const add = function(num1, num2) {
+const add = function (num1, num2) {
   return num1 + num2;
 }// Add
 
-const multiply = function(num1, num2) {
+const multiply = function (num1, num2) {
   return num1 * num2;
 }// Multiply
 
-const greeting = function(firstName, lastName) {
+const greeting = function (firstName, lastName) {
   return `Hello ${firstName} ${lastName}, nice to meet you!`;
 }// Greet
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-consume(2,2,add); // 4
-consume(10,16,multiply); // 160
-consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2, 2, add); // 4
+consume(10, 16, multiply); // 160
+consume("Mary", "Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
-console.log(consume(2,2,add));
-console.log(consume(10,16,multiply));
-console.log(consume("Mary","Poppins", greeting));
+console.log(consume(2, 2, add));
+console.log(consume(10, 16, multiply));
+console.log(consume("Mary", "Poppins", greeting));
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.

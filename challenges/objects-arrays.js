@@ -140,7 +140,7 @@ const lowerCase = [];
 zooAnimals.map(zooAnimals => {
   this.animal_name = zooAnimals.animal_name.toLowerCase();
   lowerCase.push(this.animal_name)
-})
+})// lowerCase
 console.log(lowerCase);
 
 /* Request 3: .filter() 
@@ -150,13 +150,13 @@ The zoos are concenred about animals with a lower population count. Find out whi
 */
 const largerPopulation = [];
 zooAnimals.filter(zooAnimals => {
-    // console.log(this);
+    // console.log(this); // for testing
   this.population = zooAnimals.population;
   this.animal_name = zooAnimals.animal_name;
   if (this.population < 5) {
     largerPopulation.push(this.animal_name);
   }
-})
+})// Larger Population
 console.log(largerPopulation);
 
 /* Request 4: .reduce() 
@@ -165,6 +165,10 @@ The zoos need to know their total animal population across the United States.  F
 
 */
 const populationTotal = 0;
+const add = (a, b) => a + b;
+zooAnimals.reduce(add);
+
+
 console.log(populationTotal);
 
 
